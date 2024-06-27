@@ -13,6 +13,21 @@ document.getElementsByClassName('close')[0].onclick = function() {
     document.body.style.overflow = 'auto';
 };
 
+document.getElementById('openPopup_bottom_nav').onclick = function() {
+    var popup = document.getElementById('popupForm');
+    popup.style.display = 'block';
+    document.body.classList.add('blurred');
+    document.body.style.overflow = 'hidden';
+
+};
+
+document.getElementsByClassName('close')[0].onclick = function() {
+    var popup = document.getElementById('popupForm');
+    popup.style.display = 'none';
+    document.body.classList.remove('blurred');
+    document.body.style.overflow = 'auto';
+};
+
 // Close the popup if the user clicks anywhere outside of the popup content
 window.onclick = function(event) {
     var popup = document.getElementById('popupForm');
@@ -55,12 +70,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Change navbar background color on scroll
     window.addEventListener('scroll', () => {
+        bottom_nav = document.getElementById("bottom_nav");
         if (window.scrollY > 50) {
             navbar.style.backgroundColor = 'white';
             navbar.classList.add('scrolled');
+            bottom_nav.style.display = 'flex';
         } else {
             navbar.style.backgroundColor = 'transparent';
             navbar.classList.remove('scrolled');
+            bottom_nav.style.display = 'none';
         }
     });
 

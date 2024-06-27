@@ -126,7 +126,7 @@ footer{
 #menu{
     a{
         text-decoration: none;
-        color: black;
+        color: white;
         font-weight: bold;
     }
 }
@@ -134,6 +134,7 @@ footer{
 .phone_icon img{
     background-color: white;
     border-radius: 15px;
+    padding-left: 3px;
 }
 
 
@@ -178,8 +179,7 @@ footer{
   letter-spacing: .4px;
   line-height: 1;
   max-width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px 2px 20px;
   text-decoration: none;
   text-transform: uppercase;
   user-select: none;
@@ -325,6 +325,7 @@ footer{
 }
 form{
     margin-top: 20%;
+    padding-bottom: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -434,7 +435,6 @@ form input{
         position: absolute;
         top: 60px;
         left: 0;
-        background-color: white;
         width: 100%;
         padding: 10px 0;
     }
@@ -481,9 +481,50 @@ form input{
         transition: all 0.3s;
     }
 
+    .bottom_nav{
+        position: fixed;
+        bottom:0;
+        background-color: rgb(0, 24, 56);
+        width: 90%;
+        height: 30px;
+        padding: 5%;
+        z-index: 100;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+    }
+
+    .bottom_nav_button-75{
+        align-items: center;
+        background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+        border: 0;
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        font-family: "Codec cold",sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        height: 54px;
+        justify-content: center;
+        letter-spacing: .4px;
+        line-height: 1;
+        max-width: 100%;
+        padding: 2px 20px 0 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
     .menu.open {
         display: flex;
-        background-color: white;
+        color: white;
+        background-color: rgb(0, 24, 56);        
         height: 40vh;
         margin-top: 5%;
     }
@@ -495,7 +536,7 @@ form input{
     .contact #map{
         width: 100vw;
         height: 50vh;
-        margin-top: 51%;
+        margin-top: 72%;
         text-align: center;
     }
     .map h2{
@@ -504,12 +545,18 @@ form input{
     .contact .address{
         margin-top: 0%;
         margin-bottom: 10%;
+        padding-bottom: 80px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: rgb(0, 24, 56);
         width: 100%;
+        color: white;
+    }
+
+    .address a{
+        text-decoration: none;
         color: white;
     }
     iframe{
@@ -549,7 +596,7 @@ form input{
         margin: 45% auto;
         padding: 17px;
         width: 78%;
-        height: 45%;
+        height: 48%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         z-index: 3;
         position: relative;
