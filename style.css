@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Playwrite+AU+SA:wght@100..400&display=swap');
+
+
 html {
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -8,6 +20,7 @@ html {
     padding: 0;
     
 }
+/* ====================================================== desktop styles ====================================*/
 
 .banner{
     /* background-image: url(../assets/desktop.jpg); */
@@ -40,9 +53,13 @@ html {
     justify-content: space-evenly;
 }
 .headline{
-    margin-top: 25%;
-    margin-left: 2%;
+    /* margin-top: 25%; */
+    /* margin-left: 2%; */
+    /* padding-top:30%; */
+    text-align: center;
     color: white;
+    font-family: "Playwrite AU SA", cursive;
+    font-optical-sizing: auto;
 }
 .enquire_button{
     margin-top: 2%;
@@ -93,10 +110,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-.btn_group button{
-
-}
+    transform: translateY(-50%);
+    }
 
 .submit_btn {
     height: 50px;
@@ -117,15 +132,6 @@ footer{
     }
 }
 
-.side_icon {
-    position: fixed;
-    margin-top: 76%;
-    right: 5px;
-    z-index: 10;
-    height: 121px;
-    width: 54px;
-    /* background-color: white; */
-}
 .phone_icon img{
     background-color: white;
     border-radius: 15px;
@@ -175,7 +181,6 @@ footer{
   max-width: 100%;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 3px;
   text-decoration: none;
   text-transform: uppercase;
   user-select: none;
@@ -209,22 +214,18 @@ footer{
   flex-direction: column;
   align-items: center;
   padding: 15px 45px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-  border-radius: 6px;
-  border: none;
-
-  background: #6E6D70;
-  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
-  color: #DFDEDF;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  border: none;
+  background-color: transparent;
+  margin-top: 90px;
 }
 
-.button-12:focus {
+/* .button-12:focus {
   box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
   outline: 0;
-}
+} */
 
 
 
@@ -253,6 +254,7 @@ footer{
 
 
 
+/* ====================================================== tab styles ====================================*/
 
 @media screen and (max-width: 991px) {
   .button-75 {
@@ -374,7 +376,8 @@ form input{
 }
 
 .logo_image {
-    height: 50px;
+    height: 90px;
+    width: 100px;
 }
 
 .menu {
@@ -382,10 +385,10 @@ form input{
     gap: 15px;
 }
 
-.headline {
+/* .headline {
     text-align: center;
     margin-top: 20px;
-}
+} */
 
 .enquire_button {
     text-align: center;
@@ -421,7 +424,7 @@ form input{
 
 
 
-/* Mobile styles */
+/* ====================================================== Mobile styles ====================================*/
 @media only screen and (max-width: 768px) {
     .menu {
         display: none;
@@ -443,6 +446,16 @@ form input{
         cursor: pointer;
     }
 
+    .side_icon {
+        position: fixed;
+            margin-top: 76%;
+            right: 0px;
+            z-index: 10;
+            height: 102px;
+            width: 49px;
+            background-color: white;
+            border-radius: 10px 0 0 10px;
+    }
     .navbar {
         height: 7%;
         width: 95%;
@@ -466,6 +479,7 @@ form input{
     .contact .map{
         width: 100vw;
         height: 40vh;
+        margin-top: 120px;
     }
     .contact .address{
         margin-top: 0%;
@@ -474,7 +488,7 @@ form input{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: rgb(43, 66, 99);
+        background-color: rgb(0, 24, 56);
         width: 100%;
         color: white;
     }
@@ -490,10 +504,24 @@ form input{
         margin-top: 5vh;
     }
     .banner{
-        background-image: url(./assets/mobile_banner.jpg);
+        background-image: url(./assets/mobile_banner_night.png);
+        background-repeat: no-repeat;
+        background-size: 100% 90%;
+        margin-top: 84px;
     }
-    .banner .headline{
-        margin-top: 50vh;
+    .headline{
+        /* margin-top: 25%; */
+        /* margin-left: 2%; */
+        padding-top:30%;
+        text-align: center;
+        color: white;
+        /* font-family: "Playwrite IS", cursive; */
+        /* font-family: "Parisienne", cursive; */
+        /* font-family: "Playwrite NG Modern", cursive; */
+        font-optical-sizing: auto;
+        font-size: 16px;
+
+
     }
     /* .why_choose_text{
         width: 100%;
@@ -531,6 +559,12 @@ form input{
         height: 100%;
         position: absolute;
         transition: 1s;
+    }
+    .address_line{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
     }
     /* slider css end */
 }
