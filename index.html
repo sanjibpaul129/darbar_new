@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MCGGCTQ4');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darbar Banquet Hall</title>
@@ -11,6 +18,10 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCGGCTQ4"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <nav class="navbar" id="navbar">
         <div class="logo">
             <img src="./assets/mobile_logo.png" alt="DARBAR" class="logo_image" />
@@ -54,14 +65,14 @@
         <div class="popup-content">
             <span class="close">&times;</span>
             <form id="enquiryForm">
-                <h2>Enquiry From</h2><br>
+                <h2>Enquire Now</h2><br>
                 <!-- <label for="name">Name:</label> -->
                 <input type="text" id="name" name="name" placeholder="Name"><br>
                 <!-- <label for="email">Email:</label> -->
                 <input type="email" id="email" name="email" placeholder="Email"><br>
                 <!-- <label for="mobile">Mobile:</label> -->
                 <input type="tel" id="mobile" name="mobile" placeholder="Mobile"><br>
-                <button type="submit" class="submit_btn">Submit Enquiry</button>
+                <button type="submit" class="submit_btn">Submit</button>
             </form>
         </div>
     </div>
@@ -91,24 +102,29 @@
         </section>
 
         <section id="gallary">
-            <div class="container">
-                <h1 class="heading">GALLERY</h1>
+            <div class="container"><br>
+                <h1 class="heading">Check Out Photo</h1>
+                <h1 class="heading">Gallery</h1>
                 <div class="slider">
                     <div class="main_div">
-                        <img src="./assets/img1.JPG" class="slide" alt="" />
-                        <img src="./assets/img2.webp" class="slide" alt="" />
-                        <img src="./assets/img3.webp" class="slide" alt="" />
-                        <img src="./assets/img4.jpg" class="slide" alt="" />
-                        <img src="./assets/img5.webp" class="slide" alt="" />
-                        <img src="./assets/img6.jpg" class="slide" alt="" />
-                        <img src="./assets/img7.jpg" class="slide" alt="" />
-                        <img src="./assets/img8.jpg" class="slide" alt="" />
+                        <img src="./assets/image1.webp" class="slide" alt="" />
+                        <img src="./assets/image2.jpg" class="slide" alt="" />
+                        <img src="./assets/image3.jpg" class="slide" alt="" />
+                        <img src="./assets/image4.jpg" class="slide" alt="" />
+                        <img src="./assets/image5.jpg" class="slide" alt="" />
                     </div>
                     <div class="btn_group">
-                        <button onclick="goPrev()" class="button-12"><img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/circled-chevron-left.png" alt="circled-chevron-left" /></button>
-                        <button onclick="goNext()" class="button-12"><img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/circled-chevron-right.png" alt="circled-chevron-right" /></button>
+                        <button onclick="goPrevImage()" class="button-12"><img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/circled-chevron-left.png" alt="circled-chevron-left" /></button>
+                        <button onclick="goNextImage()" class="button-12"><img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/circled-chevron-right.png" alt="circled-chevron-right" /></button>
                     </div>
                 </div>
+            </div>
+            <div class="video_container">
+                <h1 class="heading">Latest Awesome</h1>
+                <h1 class="heading">Video</h1><br>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/fv8c6IFpq-s?si=wKJ3dCiM47G5x5ZD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
             </div>
         </section>
         
@@ -117,6 +133,7 @@
         <section id="contact_us">
             <div class="contact">
                 <section id="map">
+                    <h2>Location</h2><br>
                     <div class="map">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26861.462648531917!2d88.44832708939019!3d22.624324272713686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89fa462d68fb3%3A0x27191c6eda33025!2sDurbaar%20-%20The%20Majestic%20Venue!5e0!3m2!1sen!2sin!4v1719404354407!5m2!1sen!2sin"
@@ -125,12 +142,12 @@
                     </div>
                 </section>
                 <div class="address">
-                    <h3>ADDRESS</h3>
+                    <br><br>
+                    <h3>ADDRESS:</h3>
                     <p>Holiday Inn Kolkata Airport,</p>
-                    <p>near City Centre 2, Dash Drone</p>
-                    <p>Newtown, Kolkata West Bengal 700136</p>
-                    <P>Mobile: 99039 59633</P>
-                     Biswa Bangla Sarani, Near City Centre 2, Rajarhat, Kolkata 700136, West Bengal
+                    <p>Biswa Bangla Sarani, Near City Centre 2,</p>
+                    <p>Rajarhat, Kolkata - 700136, West Bengal</p><br>
+                    <P>Mobile: +91 99039 59633</P><br>
                     <div class="social_icons">
                         <a href="https://www.facebook.com/DurbaarJainGroup/">
                             <img width="48" height="48" src="https://img.icons8.com/color/48/facebook.png"
@@ -144,7 +161,7 @@
                             <img width="48" height="48" src="https://img.icons8.com/color/48/youtube-play.png"
                                 alt="youtube-play" />
                         </a>
-                    </div>
+                    </div><br>
                 </div>
 
             </div>

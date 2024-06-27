@@ -2,12 +2,15 @@ document.getElementById('openPopup').onclick = function() {
     var popup = document.getElementById('popupForm');
     popup.style.display = 'block';
     document.body.classList.add('blurred');
+    document.body.style.overflow = 'hidden';
+
 };
 
 document.getElementsByClassName('close')[0].onclick = function() {
     var popup = document.getElementById('popupForm');
     popup.style.display = 'none';
     document.body.classList.remove('blurred');
+    document.body.style.overflow = 'auto';
 };
 
 // Close the popup if the user clicks anywhere outside of the popup content
@@ -15,9 +18,10 @@ window.onclick = function(event) {
     var popup = document.getElementById('popupForm');
     var popupContent = document.querySelector('.popup-content');
 
-    if (event.target == popup && !popupContent.contains(event.target)) {
-        popup.style.display = 'none';
-        document.body.classList.remove('blurred');
+    if (event.target == popup) {
+        popup.style.display = 'block';
+        document.body.classList.add('blurred');
+        document.body.style.overflow = 'hidden';
     }
 };
 
@@ -47,6 +51,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+
+    // Change navbar background color on scroll
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.style.backgroundColor = 'white';
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.style.backgroundColor = 'transparent';
+            navbar.classList.remove('scrolled');
+        }
+    });
+
     // Slider functionality
     const slides = document.querySelectorAll('.slide');
     let counter = 0;
@@ -60,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    window.goNext = () => {
+    window.goNextImage = () => {
         counter++;
         if (counter >= slides.length) {
             counter = 0;
@@ -68,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slideImages();
     };
 
-    window.goPrev = () => {
+    window.goPrevImage = () => {
         counter--;
         if (counter < 0) {
             counter = slides.length - 1;
