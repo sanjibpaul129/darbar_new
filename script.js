@@ -111,20 +111,4 @@ document.addEventListener('DOMContentLoaded', () => {
         slideImages();
     };
 
-    // Form submission
-    const form = document.getElementById('enquiryForm');
-
-    form.addEventListener('submit', (event) => {
-        event.preventDefault(); 
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const mobile = document.getElementById('mobile').value;
-
-        const url = new URL('thankyou.html', window.location.href);
-        url.searchParams.append('name', name);
-        url.searchParams.append('email', email);
-        url.searchParams.append('mobile', mobile);
-
-        window.location.href = url.toString();
-    });
 });
